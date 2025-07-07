@@ -1,0 +1,14 @@
+name: Pull Request Target
+
+on:
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+  hehe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: main
+        run: |
+          echo 'hello'
